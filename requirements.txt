@@ -3,7 +3,6 @@ matplotlib
 sklearn
 pandas
 numpy
-pickle
 gunicorn
 
 
