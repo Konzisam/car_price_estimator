@@ -7,7 +7,7 @@ import sklearn
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 model = pickle.load(open('regression_model.pkl', 'rb'))
-@app.route('/',methods=['GET'])
+@app.route('/')
 def Home():
     return render_template('index.html')
 
