@@ -69,7 +69,7 @@ def predict():
             offerType_Employee_car,offerType_Pre_registered,offerType_Used]])
         pred=round(prediction[0],2)
         if pred<0:
-            return render_template('index.html',prediction_texts="The car value is below 0")
+            return render_template('index.html',prediction_text="The car value is below 0")
         else:
             return render_template('index.html',prediction_text="Car valued at {}".format(pred))
     else:
