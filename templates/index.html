@@ -14,7 +14,7 @@
 	
         <h1 style="font-size:50px">Car Price Estimator</h1>
 	
-            <h3 style="font-family:Arial">Estimate the market value of your car in Germany.</h3>
+            <h3 style="font-family:Arial">Estimate the market value of your car in Germany</h3>
       </div>
     </div>
 
@@ -50,11 +50,11 @@
     <div style="color:	rgb(255, 219, 88)">
         <form action="{{ url_for('predict')}}" method="post">
             <h2>Enter your car details here:</h2>
-            <h3>Year</h3>
+            <h3>Year of Manufacture</h3>
             <input id="first" name="Year" type="number ">
-            <h3>Horse Power</h3><br><input id="second" name="Horse_power" required="required">
+            <h3>Horse Power</h3><input id="second" name="Horse_power" required="required">
             <h3>Mileage</h3><input id="third" name="mileage" required="required">
-            <h3>Fuel type</h3><br><select name="Fuel_Type" id="fuel" required="required">
+            <h3>Fuel type</h3><select name="Fuel_Type" id="fuel" required="required">
                 <option value="Gasoline">Gasoline</option>
                 <option value="Diesel">Diesel</option>
                 <option value="Electric/Gasoline">Electric/Gasoline</option>
@@ -63,18 +63,18 @@
                 <option value="CNG">CNG</option>
                 <option value="LPG">LPG</option>
             </select>
-            <h3>Offer Type</h3><br><select name="offerType" id="fourth" required="required">
+            <h3>Offer Type</h3><select name="offerType" id="fourth" required="required">
                 <option value="Used">Used</option>
                 <option value="Demonstration">Demonstration</option>
                 <option value="Pre_registered">Pre-registered</option>
                 <option value="Employee_car">Employee's Car</option>
             </select>
-            <h3>Transmission type</h3><br><select name="Transmission" id="fifth" required="required">
+            <h3>Transmission type</h3><select name="Transmission" id="fifth" required="required">
                 <option value="Manual">Manual</option>
                 <option value="Automatic">Automatic</option>
                 <option value="Semi_Automatic">Semi-Automatic</option>
             </select>
-            <br><br><button id="sub" type="submit ">Estimate Price</button>
+            <br><br><br><button id="sub" type="submit ">Estimate Price</button>
             <br>
 
 
@@ -84,7 +84,7 @@
 
 
 
-        <br><br><h3>{{ prediction_text }}<h3>
+        <h3>{{ prediction_text }}<h3>
     </div>
 
 
@@ -98,7 +98,7 @@
         }
 
         #fifth {
-            font-size: 18px;
+            font-size: 1px;
             width: 200px;
             height: 23px;
             top: 23px;
@@ -122,7 +122,7 @@
         }
         
         #fuel {
-            width: 450;
+            width: 250px;
             height: 33px;
             text-align: center;
             border-radius: 0px;
@@ -138,7 +138,7 @@
             height: 33px;
             text-align: center;
             border-radius: 0px;
-            font-size: 18px;
+            font-size: 20px;
         }
         
         #fifth:hover {
@@ -150,7 +150,7 @@
             height: 33px;
             text-align: center;
             border-radius: 0px;
-            font-size: 18px;
+            font-size: 20px;
         }
         
         #fourth:hover {
@@ -162,7 +162,7 @@
             font-family:Arial;
             font-weight: bold;
             width: 180px;
-            height: 60px;
+            height: 40px;
             text-align: center;
             border-radius: 0px;
             font-size: 18px;
@@ -174,23 +174,26 @@
         }
         
         #first {
+            width:250px;
             border-radius: 0px;
             height: 25px;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
         }
         
         #second {
+            width:250px;
             border-radius: 0px;
             height: 25px;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
         }
         
         #third {
+            width:250px;
             border-radius: 0px;
             height: 25px;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
         }
         
