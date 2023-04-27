@@ -1,5 +1,9 @@
 ### Car price prediction
 In this project I performed Exploratory data analysis on germany car price and built a car prediction model using linear Regression.
 
-The model was then deployed to production on Azure cloud, using the azure app service.
+A user interface was built using Flask and the packaged model reployed to production on Azure cloud, using the azure app service.
+
+Here is a snapshot of the app.
+
+[app]()
 
