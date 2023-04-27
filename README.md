@@ -5,5 +5,5 @@ A user interface was built using Flask and the packaged model reployed to produc
 
 Here is a snapshot of the app.
 
-![app](https://github.com/Konzisam/car_price_estimator_germany/blob/main/app.py)
+![app](https://github.com/Konzisam/car_price_estimator_germany/blob/main/app.png))
 
