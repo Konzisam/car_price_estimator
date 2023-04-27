@@ -1,6 +1,5 @@
-### software and tool Requirements
-1. Github account
-2. Cloud account(Eg Azure, Google , AWS)
-3. VScodeIDE
-4. GitCLI
-5. Create new environent
+### Car price prediction
+In this project I performed Exploratory data analysis on germany car price and built a car prediction model using linear Regression.
+
+The model was then deployed to production on Azure cloud.
+
