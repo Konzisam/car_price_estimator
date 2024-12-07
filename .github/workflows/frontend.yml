@@ -40,7 +40,6 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        cd frontend/
         aws s3 sync frontend/build/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete
 
 
