@@ -1,0 +1,8 @@
+stage                  = "dev"
+region                 = "eu-central-1"
+business_name          = "vdn"
+domain_name            = "vehicledatanexus.com"
+additional_acm_domain_name = "*.vehicledatanexus.com"
+additional_domain_name = "price-check.vehicledatanexus.com"
+default_document       = "index.html"
+error_document         = "404.html"
