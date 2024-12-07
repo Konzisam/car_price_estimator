@@ -1,0 +1,27 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 100px auto;
+  padding: 50px;
+  background: linear-gradient(135deg, #8f9792, #26695d);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app button {
+  padding: 20px 100px;
+  font-size: medium;
+}
+
+h3 {
+  text-align: center;
+}
+
+.signOut {
+    margin-left: 2%;
+    align-items: center;
+    max-width: 200px;
+    padding: 10px 50px;
+    font-size: medium;
+}

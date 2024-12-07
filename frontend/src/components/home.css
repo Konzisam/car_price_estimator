@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #8f9792, #26695D);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+
+
+  
+
+  
