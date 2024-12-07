@@ -19,7 +19,5 @@ In this project, I worked with a dataset of car prices to explore the data and u
 
 One thing to note is that the data source is limited to **Germany**.
 
-Here is a snapshot of the app.
-
-![app](https://github.com/Konzisam/car_price_estimator_germany/blob/main/app.png))
+Try out the app here: <LINK>
 

@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Exclude csv
-.csv
+*.csv
