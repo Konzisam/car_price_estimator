@@ -3,22 +3,21 @@ import { useAuth } from "react-oidc-context";
 import Home from "./components/Home";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { config } from "./config/env";
-import logo from "";
+// import { config } from "./config/env";
 
-const { client_id, localURL: logoutUri, cognitoDomain } = config;
+// const { client_id, localURL: logoutUri, cognitoDomain } = config;
 
 function App() {
   const auth = useAuth();
   const navigate = useNavigate();
 
-  const signOutRedirect = () => {
-    sessionStorage.clear();
+  // const signOutRedirect = () => {
+  //   sessionStorage.clear();
 
-    window.location.href = `${cognitoDomain}/logout?client_id=${client_id}&logout_uri=${encodeURIComponent(
-      logoutUri
-    )}`;
-  };
+  //   window.location.href = `${cognitoDomain}/logout?client_id=${client_id}&logout_uri=${encodeURIComponent(
+  //     logoutUri
+  //   )}`;
+  // };
 
   useEffect(() => {
     if (auth.isAuthenticated) {
