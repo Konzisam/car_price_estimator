@@ -28,12 +28,12 @@ resource "aws_cloudfront_distribution" "car_predictor_cloudfront" {
     target_origin_id = var.bucket_name
     compress = true
     forwarded_values {
-      headers = [ ]
       query_string = true
       cookies {
         forward = "all"
       }
     }
+     cache_policy_id = "no-cache-policy"
   }
 
   restrictions {
