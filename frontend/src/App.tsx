@@ -11,6 +11,8 @@ function App() {
   const auth = useAuth();
   const navigate = useNavigate();
 
+  console.log(auth);
+
   // const signOutRedirect = () => {
   //   sessionStorage.clear();
 
