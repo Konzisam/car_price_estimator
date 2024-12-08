@@ -33,7 +33,6 @@ resource "aws_cloudfront_distribution" "car_predictor_cloudfront" {
         forward = "all"
       }
     }
-     cache_policy_id = "no-cache-policy"
   }
 
   restrictions {
