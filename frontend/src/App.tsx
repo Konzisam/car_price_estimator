@@ -55,6 +55,7 @@ function App() {
       </div>
       <h1>Car Price Estimator</h1>
       <h3>Please Login to use</h3>
+
       <button onClick={() => auth.signinRedirect()}>Sign in / Register</button>
       <button onClick={() => signOutRedirect()}>Sign out</button>
     </div>

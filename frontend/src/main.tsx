@@ -16,7 +16,7 @@ console.log(client_id)
 const cognitoAuthConfig = {
   authority: cognitoAuthority,
   client_id,
-  redirect_uri: `${localURL}`,
+  redirect_uri: `${localURL}/callback`,
   response_type: "code",
   scope: "email openid phone",
 };
