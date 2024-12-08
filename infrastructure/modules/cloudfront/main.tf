@@ -17,7 +17,7 @@ resource "aws_cloudfront_distribution" "car_predictor_cloudfront" {
 
   custom_error_response {
     error_code = 404
-    response_code = 404
+    response_code = 200
     response_page_path = "/${var.error_document}"
   }
 
