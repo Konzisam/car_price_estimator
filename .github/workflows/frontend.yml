@@ -37,7 +37,7 @@ jobs:
         echo "VITE_COGNITO_DOMAIN=${{ secrets.VITE_COGNITO_DOMAIN }}" >> $GITHUB_ENV
         echo "VITE_LOCAL_URL=${{ secrets.VITE_LOCAL_URL }}" >> $GITHUB_ENV
         echo "VITE_CLIENT_ID=${{ secrets.VITE_CLIENT_ID }}" >> $GITHUB_ENV
-        echo "VITE_AUTHORITY=${{ secrets.VITE_AUTHORITY }}" >> $GITHUB_ENV
+        echo "VITE_COGNITO_AUTHORITY=${{ secrets.VITE_COGNITO_AUTHORITY }}" >> $GITHUB_ENV
 
     - name: Build React app
       run: |
