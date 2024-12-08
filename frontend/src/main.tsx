@@ -8,6 +8,9 @@ import { config } from "./config/env.ts";
 
 const { authority, client_id, localURL } = config;
 
+const url_test = `${localURL}/callback`
+console.log(url_test);
+
 const cognitoAuthConfig = {
   authority,
   client_id,
