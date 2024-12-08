@@ -10,6 +10,8 @@ const { authority, client_id, localURL } = config;
 
 const url_test = `${localURL}callback`
 console.log(url_test);
+console.log(authority)
+console.log(client_id)
 
 const cognitoAuthConfig = {
   authority,

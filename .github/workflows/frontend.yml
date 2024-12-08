@@ -6,8 +6,13 @@ on:
       - main
       - "*"
       - "feature/*"
+    paths:
+      - 'frontend/**'
+
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'frontend/**'
 
 jobs:
   deploy:
