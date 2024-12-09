@@ -8,11 +8,6 @@ import { config } from "./config/env.ts";
 
 const { cognitoAuthority, client_id, localURL } = config;
 
-const encodedRedirectUri = encodeURIComponent(`${localURL}callback`);
-console.log(encodedRedirectUri);
-console.log("authority:--->", cognitoAuthority, "<---")
-console.log("--->",client_id,"<----")
-
 const cognitoAuthConfig = {
   authority: cognitoAuthority,
   client_id,

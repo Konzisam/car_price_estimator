@@ -3,36 +3,21 @@ import { useAuth } from "react-oidc-context";
 import Home from "./components/Home";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { config } from "./config/env";
+// import { config } from "./config/env";
 
-const { client_id, localURL: logoutUri, cognitoDomain } = config;
+// const { client_id, localURL: logoutUri, cognitoDomain } = config;
 
 function App() {
   const auth = useAuth();
   const navigate = useNavigate();
 
-  console.log(auth);
+  // const signOutRedirect = () => {
+  //   sessionStorage.clear();
 
-  const signOutRedirect = () => {
-    sessionStorage.clear();
-
-    window.location.href = `${cognitoDomain}/logout?client_id=${client_id}&logout_uri=${encodeURIComponent(
-      logoutUri
-    )}`;
-  };
-
-  const handleLogin = () => {
-    // Manually construct the signin URL to inspect it
-    const signinUrl = `${cognitoDomain}/oauth2/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(
-      `${logoutUri}callback`
-    )}&response_type=code&scope=email+openid+phone`;
-
-    // Log the signin URL
-    console.log("Signin URL:", signinUrl);
-
-    // Proceed with the redirect
-    auth.signinRedirect();
-  };
+  //   window.location.href = `${cognitoDomain}/logout?client_id=${client_id}&logout_uri=${encodeURIComponent(
+  //     logoutUri
+  //   )}`;
+  // };
 
   useEffect(() => {
     if (auth.isAuthenticated) {
@@ -68,9 +53,8 @@ function App() {
       </div>
       <h1>Car Price Estimator</h1>
       <h3>Please Login to use</h3>
-      {/* <button onClick={() => auth.signinRedirect()}>Sign in / Register</button> */}
-      <button onClick={handleLogin}>Sign in / Register</button>
-      <button onClick={() => signOutRedirect()}>Sign out</button>
+      <button onClick={() => auth.signinRedirect()}>Sign in / Register</button>
+      {/* <button onClick={() => signOutRedirect()}>Sign out</button> */}
     </div>
   );
 }
