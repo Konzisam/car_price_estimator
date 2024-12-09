@@ -8,8 +8,8 @@ import { config } from "./config/env.ts";
 
 const { cognitoAuthority, client_id, localURL } = config;
 
-const url_test = `${localURL}callback`
-console.log(url_test);
+const encodedRedirectUri = encodeURIComponent(`${localURL}callback`);
+console.log(encodedRedirectUri);
 console.log("authority:--->", cognitoAuthority, "<---")
 console.log("--->",client_id,"<----")
 
