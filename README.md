@@ -15,9 +15,10 @@ In this project, I worked with a dataset of car prices to explore the data and u
 - **CloudFront:** to distribute the static website globally with low latency and high performance.
 - **Route 53:** handle domain name management, routing traffic to the CloudFront distribution.
 - **ACM:** provision an SSL certificate for secure HTTPS access to the static website.
+One thing to note is that the dataset is limited to **Germany**.
 
+Try out the app on https://price-check.vehicledatanexus.com/
 
-One thing to note is that the data source is limited to **Germany**.
+Here is an architechture diagram illustrating the flow:
 
-Try out the app here: <LINK>
-
+![Funny Cat](https://github.com/Konzisam/car_price_estimator/blob/main/architechture.gif)
