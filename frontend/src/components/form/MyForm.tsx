@@ -33,9 +33,10 @@ const initialValues: InputData = {
 interface MyFormProps {
   onSubmit: (values: InputData) => void;
   prediction: number | null;
+  loading: boolean;
 }
 
-const MyForm: React.FC<MyFormProps> = ({ onSubmit, prediction }) => (
+const MyForm: React.FC<MyFormProps> = ({ onSubmit, prediction, loading }) => (
   <div className="form-container">
     <Formik
       initialValues={initialValues}
@@ -119,8 +120,9 @@ const MyForm: React.FC<MyFormProps> = ({ onSubmit, prediction }) => (
         </Form>
       )}
     </Formik>
-
-    {prediction !== null && (
+    {loading ? ( 
+          <p>Predicting...</p>
+        ) : prediction !== null && (
       <div className="result">
         <h4>
           Value: <span>€{prediction}</span>
