@@ -10,8 +10,8 @@ const { cognitoAuthority, client_id, localURL } = config;
 
 const url_test = `${localURL}callback`
 console.log(url_test);
-console.log("authority:--->", cognitoAuthority)
-console.log(client_id)
+console.log("authority:--->", cognitoAuthority, "//")
+console.log("str-",client_id,"-end")
 
 const cognitoAuthConfig = {
   authority: cognitoAuthority,
