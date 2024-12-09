@@ -122,13 +122,13 @@ const MyForm: React.FC<MyFormProps> = ({ onSubmit, prediction, loading }) => (
     </Formik>
     {loading ? ( 
           <p>Predicting...</p>
-        ) : prediction !== null && (
+        ) : prediction !== null ? (
       <div className="result">
         <h4>
           Value: <span>€{prediction}</span>
         </h4>
       </div>
-    )}
+    ): null}
   </div>
 );
 
