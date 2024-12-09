@@ -25,3 +25,32 @@ h3 {
     padding: 10px 50px;
     font-size: medium;
 }
+
+@media (max-width: 480px) {
+  .app {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #8f9792, #26695d);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .app button {
+    padding: 20px 50px;
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+}
