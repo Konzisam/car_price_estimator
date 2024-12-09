@@ -11,20 +11,22 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ accessToken }) => {
   const [prediction, setPrediction] = useState<number | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = async (values: InputData) => {
     if (!accessToken) {
       setErrorMessage("Access token is missing. Please log in again.");
+      setLoading(false);
       return;
     }
 
     try {
       const predictionValue = await fetchPrediction(values, accessToken);
       setPrediction(predictionValue ?? null);
-      setErrorMessage(null);
-      console.log("Predicted value: ", predictionValue);
+      setLoading(false);
     } catch (error) {
       setErrorMessage("An error occurred while fetching the prediction.");
+      setLoading(false);
       console.error(error);
     }
   };
@@ -35,7 +37,7 @@ const Home: React.FC<HomeProps> = ({ accessToken }) => {
         <img src="logo.png" alt="logo" />
       </div>
       <h1>Car Price Estimator</h1>
-      <MyForm onSubmit={handleSubmit} prediction={prediction} />
+      <MyForm onSubmit={handleSubmit} prediction={prediction} loading={loading} />
       {errorMessage && <div className="error-message">{errorMessage}</div>}
     </div>
   );
