@@ -15,10 +15,25 @@ In this project, I worked with a dataset of car prices to explore the data and u
 - **CloudFront:** to distribute the static website globally with low latency and high performance.
 - **Route 53:** handle domain name management, routing traffic to the CloudFront distribution.
 - **ACM:** provision an SSL certificate for secure HTTPS access to the static website.
+- **Terrraform(Iac):** Automated the provisioning of cloud infrastructure, ensuring consistent and repeatable deployments.
+
 One thing to note is that the dataset is limited to **Germany**.
+
+### Background
+The Car Price Estimator is designed to address the need for accurate and efficient pricing tools in the automotive industry, particularly tailored to the German market where. By leveraging machine learning and cloud-native architecture, it provides an end-to-end solution for predicting car prices based on various factors.
+
+### Case Scenarios:
+1. **Pricing and Transparency:** *Dealers*, *resellers*, *individual sellers*, *buyers* and *insurers* with a need to determine car values based on multiple factors like age, mileage, make, and model. The tool provides automated, data-driven price predictions and ensures transparency in transactions, supporting fair valuations for all stakeholders.
+It also ensures the prices are aligned with market trends.
+2. **Localized Market Focus:** Tailored specifically for the German market, the solution incorporates region-specific trends, ensuring highly accurate and relevant market prices.
+
+- **Accessibility and Availability:** Model is via an API and a user-friendly React frontend allows  users to interact with the tool effortlessly. Cloudfront ensures high availability.
+- **Security:** Integration with AWS Cognito ensures that sensitive data remains secure, and avoids API misuse.
+- **Scalability:** USing AWS Lambda and ECR ensures the application can handle fluctuating traffic with minimal 
+
 
 Try out the app on https://price-check.vehicledatanexus.com/
 
-Here is an architechture diagram illustrating the flow:
+Here is an architechture diagram showcasing the complete workflow
 
 ![Funny Cat](https://github.com/Konzisam/car_price_estimator/blob/main/architechture.gif)
