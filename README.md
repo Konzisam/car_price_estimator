@@ -27,7 +27,7 @@ The Car Price Estimator is designed to address the need for accurate and efficie
 It also ensures the prices are aligned with market trends.
 2. **Localized Market Focus:** Tailored specifically for the German market, the solution incorporates region-specific trends, ensuring highly accurate and relevant market prices.
 
-### Architecture offers:
+### This architecture offers:
 - **Accessibility and Availability:** Model is via an API and a user-friendly React frontend allows  users to interact with the tool effortlessly. Cloudfront ensures high availability.
 - **Security:** Integration with AWS Cognito ensures that sensitive data remains secure, and avoids API misuse.
 - **Scalability:** USing AWS Lambda and ECR ensures the application can handle fluctuating traffic with minimal 
