@@ -131,4 +131,4 @@ dmypy.json
 # Exclude csv
 *.csv
 
-flask
+/flask
