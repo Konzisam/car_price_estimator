@@ -1,4 +1,4 @@
-### Car Price Estimator with API Gateway and Lambda - ([Try it!](https://github.com/Konzisam/car_price_estimator/)
+### Car Price Estimator with API Gateway and Lambda - ([Try it](https://github.com/Konzisam/car_price_estimator/))
 
 In this project, I worked with a dataset of car prices to explore the data and understand what factors affect pricing. After analyzing the data, I built a model to predict car prices. The model was then packaged and deployed, making it available for use.
 
